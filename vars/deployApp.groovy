@@ -1,5 +1,4 @@
 // Usage (inside vaultAwsCreds { }): deployApp(dir: 'terraform')
-// Applies Terraform with the freshly pushed image tag, then exposes env.APP_URL
 def call(Map config = [:]) {
     String tfDir = config.dir ?: 'terraform'
     String tag   = config.imageTag ?: env.IMAGE_TAG
